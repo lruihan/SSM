@@ -5,7 +5,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.crossoverjie.kafka.orderconsumer.pojo.Stock;
 import com.crossoverjie.kafka.orderconsumer.service.OrderService;
-import com.crossoverjie.kafka.orderconsumer.service.StockService;
 import com.crossoverjie.kafka.orderconsumer.util.SpringBeanFactory;
 import com.google.gson.Gson;
 import org.apache.kafka.clients.CommonClientConfigs;

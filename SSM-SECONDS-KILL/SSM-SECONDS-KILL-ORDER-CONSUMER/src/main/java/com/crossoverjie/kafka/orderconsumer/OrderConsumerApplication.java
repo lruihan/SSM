@@ -16,8 +16,8 @@ import tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration;
 
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = {MapperAutoConfiguration.class})
-@MapperScan(basePackages = "com.crossoverjie.kafka.orderconsumer.mapper")
-@ComponentScan("com.crossoverjie.kafka.orderconsumer")
+@MapperScan(basePackages = "com.crossoverjie.kafka.orderconsumer.dao")
+@ComponentScan({"com.crossoverjie.kafka.orderconsumer"})
 public class OrderConsumerApplication {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(OrderConsumerApplication.class);
@@ -25,12 +25,14 @@ public class OrderConsumerApplication {
 	public static void main(String[] args) {
 		new SpringApplicationBuilder(OrderConsumerApplication.class).
 				listeners(new ApplicationPidFileWriter())
-				.web(false)
+				.web(true)
 				.run(args);
 
+		// SpringApplication.run(OrderConsumerApplication.class, args);
 		ConsumerGroup consumerGroup = SpringBeanFactory.getBean(ConsumerGroup.class);
 		consumerGroup.execute();
 
 		LOGGER.info("启动成功");
+		
 	}
 }

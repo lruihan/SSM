@@ -1,0 +1,74 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "vxrail-healthchecks local",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "PROFILE": "dev",
+                "prometheus_multiproc_dir": "prometheus_multiproc_dir"
+            },
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "vxrail-data-processor local",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "PROFILE": "dev",
+                "prometheus_multiproc_dir": "prometheus_multiproc_dir"
+            },
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "hci-adapter local",
+            "request": "launch",
+            "mainClass": "com.emc.cm.adapter.hci.Application",
+            "projectName": "hci-adapter",
+            "args": "--spring.profiles.active=local"
+        },
+        {
+            "type": "java",
+            "name": "system-adapter local",
+            "request": "launch",
+            "mainClass": "com.emc.cm.adapter.system.Application",
+            "projectName": "system-adapter",
+            "args": "--spring.profiles.active=local"
+        },
+        {
+            "type": "java",
+            "name": "alert-adapter local",
+            "request": "launch",
+            "mainClass": "com.emc.cm.adapter.alert.Application",
+            "projectName": "alert-adapter",
+            "args": "--spring.profiles.active=local"
+        },
+        {
+            "type": "java",
+            "name": "connectivity-adapter local",
+            "request": "launch",
+            "mainClass": "com.emc.cm.ca.Application",
+            "projectName": "connectivity-adapter",
+            "args": "--spring.profiles.active=local"            
+        },
+	{
+            "name": "short-term-prediction local",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": false,
+            "env": {
+                "PROFILE": "dev",
+                "prometheus_multiproc_dir": "prometheus_multiproc_dir"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}

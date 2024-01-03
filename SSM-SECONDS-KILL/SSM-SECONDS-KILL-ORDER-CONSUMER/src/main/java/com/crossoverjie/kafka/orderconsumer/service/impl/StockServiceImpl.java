@@ -1,6 +1,6 @@
 package com.crossoverjie.kafka.orderconsumer.service.impl;
 
-import com.crossoverjie.kafka.orderconsumer.mapper.StockMapper;
+import com.crossoverjie.kafka.orderconsumer.dao.StockMapper;
 import com.crossoverjie.kafka.orderconsumer.pojo.Stock;
 import com.crossoverjie.kafka.orderconsumer.service.StockService;
 import org.springframework.beans.factory.annotation.Autowired;

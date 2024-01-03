@@ -1,6 +1,5 @@
 package com.crossoverjie.kafka.orderconsumer.service;
 
-
 import com.crossoverjie.kafka.orderconsumer.pojo.Stock;
 
 /**

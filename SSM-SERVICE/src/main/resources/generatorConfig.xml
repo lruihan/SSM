@@ -13,7 +13,7 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <jdbcConnection
-                connectionURL="jdbc:mysql://127.0.0.1:3306/ssm?characterEncoding=utf8"
+                connectionURL="jdbc:mysql://127.0.0.1:3307/ssm?characterEncoding=utf8"
                 driverClass="com.mysql.jdbc.Driver" password="tiger" userId="root"/>
         <javaModelGenerator targetPackage="com.crossoverJie.pojo"
                             targetProject="src/main/java"/>
@@ -35,7 +35,7 @@
                 <property name="suppressAllComments" value="true"/>
             </commentGenerator>
             <jdbcConnection
-                    connectionURL="jdbc:mysql://127.0.0.1:3306/ssm2?characterEncoding=utf8"
+                    connectionURL="jdbc:mysql://127.0.0.1:3307/ssm2?characterEncoding=utf8"
                     driverClass="com.mysql.jdbc.Driver" password="tiger" userId="root"/>
             <javaModelGenerator targetPackage="com.crossoverJie.pojo"
                                 targetProject="src/main/java"/>

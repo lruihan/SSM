@@ -58,7 +58,10 @@
 	</properties>
 
 	<dependencies>
-
+		<!-- <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency> -->
 		<dependency>
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>kafka_2.11</artifactId>
@@ -109,6 +112,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 			<version>${spring-boot.version}</version>
 		</dependency>
 
@@ -176,6 +184,11 @@
 			<version>RELEASE</version>
 		</dependency>
 
+		<dependency>
+            <groupId>top.crossoverjie.opensource</groupId>
+            <artifactId>distributed-redis-tool</artifactId>
+            <version>1.0.5</version>
+        </dependency>
 
 
 	</dependencies>

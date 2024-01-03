@@ -1,4 +1,4 @@
-package com.crossoverjie.kafka.orderconsumer.mapper;
+package com.crossoverJie.seconds.kill.api.mapper;
 
 import com.crossoverjie.kafka.orderconsumer.pojo.StockOrder;
 import com.crossoverjie.kafka.orderconsumer.pojo.StockOrderExample;

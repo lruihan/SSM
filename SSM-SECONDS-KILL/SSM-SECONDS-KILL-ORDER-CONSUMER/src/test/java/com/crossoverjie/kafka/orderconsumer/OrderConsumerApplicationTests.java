@@ -1,6 +1,6 @@
 package com.crossoverjie.kafka.orderconsumer;
 
-import com.crossoverjie.kafka.orderconsumer.mapper.StockMapper;
+import com.crossoverjie.kafka.orderconsumer.dao.StockMapper;
 import com.crossoverjie.kafka.orderconsumer.pojo.Stock;
 import org.junit.Test;
 import org.junit.runner.RunWith;

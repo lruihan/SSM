@@ -1,0 +1,49 @@
+{
+	"java.home": "/usr/lib/jvm/jdk-14.0.2+12",
+    "python.pythonPath": "venv/bin/python",
+    "python.testing.promptToConfigure": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "editor.formatOnSave": false,
+    "editor.rulers": [
+        120
+    ],
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.sortImportsWhenPythonAndSave",
+            "sequence": [
+                "python.sortImports",
+                "workbench.action.files.save",
+            ]
+        }
+    ],
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "{based_on_style: google, column_limit: 119}",
+    ],
+    "python.formatting.yapfPath": "/home/vagrant/.pyenv/shims/yapf",
+    "python.sortImports.args": [
+        "--trailing-comma",
+        "--force-grid-wrap",
+        "0",
+        "--use-parentheses",
+        "--force-single-line-imports",
+        "--line-width",
+        "88",
+        "--multi-line",
+        "3"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--max-line-length",
+        "120",
+        "--disable",
+        "missing-function-docstring, missing-class-docstring, missing-module-docstring"
+    ],
+    "python.linting.pylintPath": "/home/vagrant/.pyenv/shims/pylint",
+    "python.sortImports.path": "/home/vagrant/.pyenv/shims/isort"
+}

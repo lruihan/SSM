@@ -83,11 +83,11 @@
             <artifactId>SSM-API</artifactId>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.crossoverJie</groupId>
             <artifactId>SSM-REQUEST-CHECK</artifactId>
             <version>1.0.0-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
 
         <!-- 添加Servlet支持 -->
         <dependency>

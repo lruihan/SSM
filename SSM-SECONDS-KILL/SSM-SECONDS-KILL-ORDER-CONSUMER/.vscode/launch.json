@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ssm local",
+            "request": "launch",
+            "mainClass": "com.crossoverjie.kafka.orderconsumer.OrderConsumerApplication",
+            "projectName": "order-consumer",
+            "args": "--spring.profiles.active=local"
+        }
+    ]
+}
